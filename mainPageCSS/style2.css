@@ -25,7 +25,8 @@
 }
 .say{
     position: relative;
-    background-image: url('/Images/purple.png');
+/*     background-image: url('/Images/purple.png'); */
+    background-color: indigo;
     color: white;
     display: flex;
     flex-direction: column;
