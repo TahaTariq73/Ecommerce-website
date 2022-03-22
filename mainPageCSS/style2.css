@@ -1,0 +1,174 @@
+/* Animations */
+@keyframes animate-say1{
+    from{ right: 100%; }
+    to{ right: 0%; }
+}
+@keyframes animate-say2{
+    from { left: 100%; }
+    to { left: 0%; }
+}
+
+/* Reusing code */
+:root{ --purple: rgb(45, 27, 110); }
+.copy-right h2, .follow-us, .pop-header h2 { font-family: 'Lobster', sans-serif; }
+.modal-heading, .modal-body form i, .btn-modal, .pop-header h2, #pop-submit, .dropDown li a { color: var(--purple); }
+
+/* This code is for contact-us section */
+.preview{ padding: 2rem 3rem; }
+.flex3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+.say{
+    position: relative;
+    background-image: url('/Images/purple.png');
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    margin: 2rem;
+    border-radius: 21px;
+    transition: all 0.3s;
+    width: 345px;
+}
+.ani1{
+    position: relative;
+    right: 100%;
+    display: none;
+}
+.ani2{
+    position: relative;
+    left: 100%;
+    display: none;
+}
+.say:hover{  box-shadow: 0px 0px 12px rgb(110, 27, 189); }
+
+.say img{ 
+    width: 70px;
+    filter: invert(100%);
+}
+.say h3{ font-weight: bold; color: white; font-size: 20px ;}
+.preview-stars{ color: white ; }
+
+/* This code is for footer */
+.footer{
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+.copy-right{ padding: 0.5rem 2rem; }
+.copy-right h2{ text-align: center; }
+.link-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.link-list ul{ margin-left: 4rem; }
+.link-list ul h4{ text-align: left; }
+.link-list ul li{  list-style: none; }
+.link-list ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.712);
+}
+.link-list ul li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.follow-us{ text-align: center; }
+.follow-us-icons a{ color: white; }
+.follow-us-icons i{
+    padding: 1rem 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+/* Code for designing modal */
+.modal-content{ font-family: Arial, Helvetica, sans-serif; }
+.modal-heading{ font-size: 1.6rem; }
+.modal-body{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 270px;
+}
+#SignUp, #LogIn{ width: 100%; }
+#LogIn{ margin-top: 32px; }
+.modal-body form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal-body form input{
+    margin: 1.4rem 0px;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 2px solid var(--purple);
+}
+.modal-body form input:focus{
+    outline: none;
+    border-color: var(--purple);
+}
+.modal-body form i{
+    font-size: 1.5rem;
+    padding-right: 12px;
+}
+.btn-modal{
+    background-color: transparent;
+    border: 2px solid var(--purple);
+    font-size: 1.2rem;
+    color: var(--purple);
+    padding: 3px 9px;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+.btn-modal:hover{
+    background-color: var(--purple);
+    color: white;
+    box-shadow: 0px 0px 6px var(--purple);
+}
+
+/* Media queries */
+@media screen and (max-width: 1080px) {
+    .items{ margin: 0px 4rem; }
+    .btn-group{ margin-left: 4rem; }
+    .say{ margin: 2rem 0.6rem; }
+    .preview { padding: 2rem 1.2rem; }
+}
+
+@media screen and (max-width: 900px) {
+    .items{ grid-template-columns: repeat(2, 1fr); }
+    .flex3 { flex-direction: column; }
+}
+
+@media screen and (max-width: 760px) {
+    #main-img{ display: none; }
+    .link-list ul{ margin-left: 1rem; }
+    .box{ padding: 2rem 3rem; flex-direction: column; }
+    .about-us{ padding: 0px 1.2rem; }
+    .box-box{ padding: 0rem 1.2rem; }
+    .box img{ margin-bottom: 3rem; }
+}
+
+@media screen and (max-width: 630px) {
+    .items{ grid-template-columns: repeat(1, 1fr); }
+    .link-list{ grid-template-columns: repeat(2, 1fr); }
+    .link-list ul{ margin-bottom: 2rem; }
+    .box{ padding: 1.2rem 0.5rem; }
+    .box h2{ text-align: center; margin-bottom: 2rem; }
+    .items img{ width: 90%; }
+    .sec-heading{ font-size: 2.3rem; }
+}
+
+@media screen and (max-width: 430px) {
+    .home-section{ padding: 0px 2rem; }
+    .home-intro h1{ font-size: 2.7rem; text-align: center; }
+    .items{ margin: 0px 2rem; }
+    .link-list ul{ margin-left: 0rem; }
+    .btn-group{ margin-left: 2rem; margin-top: 3rem; }
+    .btn-group a{ padding: 12px 1.4rem; }
+}

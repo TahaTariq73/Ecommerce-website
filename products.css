@@ -1,0 +1,158 @@
+:root{ --purple : rgb(45, 27, 110); }
+
+/* Animations */
+@keyframes animation-Pop{
+    from{ top: 15%; display: none; opacity: 0; }
+    to{ top: 50%; display: block; opacity: 1; }
+}
+@keyframes close-Pop{
+    from{ top: 50%; display: block; opacity: 1; }
+    to{ top: 15%; display: none; opacity: 0; }
+}
+
+.list-group-item a { color: var(--purple); }
+
+/* Code for products section */
+.products{
+    margin: 0px 6rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 23px;
+}
+.item-detail{ margin-left: 0px; }
+.products img{
+    height: 310px;
+    width: 100%;
+    transition: all 0.5s;
+}
+.products img:hover{
+    transform: perspective(9cm) rotateX(0deg) rotateY(-6deg);
+    box-shadow: 0px 4px 12px rgb(204, 204, 204);
+}
+.pop-btn{
+    margin-right: 12px;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: var(--purple);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.pop-btn:hover{
+    box-shadow: 0px 0px 6px purple;
+}
+
+/* Code for location section */
+.location-section{
+    padding: 0px 6rem;
+    background-color: rgb(31, 31, 31);
+    color: rgba(255, 255, 255, 0.781);
+}
+.loc-con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location-section div, .location-section iframe{
+    margin: 0px 2rem;
+}
+
+.location{ width: 50%; }
+.location h2{ font-weight: bold; }
+
+/* Code for footer */
+.footer{
+    background-color: rgb(31, 31, 31);
+    color: white;
+    padding: 12px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Code for pop-Up */
+#pop-up{
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    top: 15%;
+    left: 50%;
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 6px rgb(184, 196, 202);
+    transition: all 0.5s;
+    display: none;
+    opacity: 0;
+}
+.pop-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 2rem;
+    width: 100%;
+}
+.pop-header > button{
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: black;
+}
+.pop-inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem 0px;
+}
+.pop-inputs div{ padding: 0px 2rem; }
+.pop-inputs input{ width: 72px; }
+#pop-submit{ 
+    width: 85%;
+    margin: 0.8rem 2rem;
+    margin-bottom: 1.2rem;
+    background-color: transparent;
+    border: 2px solid var(--purple);
+    border-radius: 6px;
+    padding: 4px 0px;
+    font-weight: bold;
+    transition: all 0.4s;
+    color: var(--purple);
+}
+#pop-submit:hover{
+    background-color: var(--purple);
+    color: white;
+    box-shadow: 0px 0px 6px var(--purple);
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1125px) {
+    .products{ margin: 0px 2rem; }    
+    .location-section{ padding: 0px 1rem; }
+}
+
+@media screen and (max-width: 950px) {
+    .products{ grid-template-columns: repeat(3, 1fr); }
+}
+
+@media screen and (max-width: 760px) {
+    .products { grid-template-columns: repeat(2, 1fr); }
+    .loc-con { flex-direction: column; }
+    .location-section iframe{
+        margin: 2rem 0rem;
+        margin-bottom: 5rem;
+        width: 98%;
+    }
+    .location-section div{ width: auto; }
+    .sec-heading{ font-size: 2rem; }
+    .pop-header { padding: 12px 1rem; } 
+}
+
+@media screen and (max-width: 515px) {
+    .products{ grid-template-columns: repeat(1, 1fr); }
+    .location-section{ padding: 0px 0rem; }
+    .footer h3 { font-size: 1rem; }
+}

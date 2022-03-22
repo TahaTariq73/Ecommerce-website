@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Best men clothes under low budget and under the fashion of 2022 | Only available in Karachi now">
+
+  <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="mainPageCSS/style.css">
+  <link rel="stylesheet" href="mainPageCSS/style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Baloo+Bhaijaan+2:wght@400;700&family=Lobster&family=PT+Sans&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <script src="https://kit.fontawesome.com/26e73eaccf.js" crossorigin="anonymous"></script>
+
+  <title>Shopliq | Buy men clothes now</title>
+</head>
+
+<body>
+
+  <!-- main nav can't be move with the page -->
+  <div class="main-nav"  id="home">
+    <div class="logo" id="logo" onclick="window.location = 'index.html'">
+      <img src="Images/logo.png" alt="logo" draggable="false">
+      <h1>Shopliq</h1>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search items">
+      <button><i class="bi bi-search"></i></button>
+    </div>
+  </div>
+
+  <!-- This nav can move with the page -->
+  <div class="nav" id="nav">
+    <div class="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="products.html" target="_blank">Products</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#" class="modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact us</a></li>
+        <li id="Menu"><i class="fas fa-solid fa-bars" style="margin-right: 12px;"></i>Menu</li>
+      </ul>
+    </div>
+
+    <div class="menu-icons">
+      <i class="bi bi-heart-fill" id="like" title="Like our Website"></i>
+      <i class="bi bi-cart-fill" title="Check your cart" onclick="window.location = 'cart.html'"></i>
+      <button type="button" class="modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="bi bi-person-circle" title="SignUp"></i>
+      </button>
+    </div>
+  </div>
+  <ul class="list-group dropDown" id="dropMenu" style="z-index: 2;"> 
+    <li class="list-group-item" aria-current="true"><a href="#home">Home</a></li>
+    <li class="list-group-item"><a href="products.html">Products</a></li>
+    <li class="list-group-item"><a href="#about-us">About Us</a></li>
+    <li class="list-group-item"><a href="#" class="modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact us</a></li>
+  </ul>
+  
+
+<!-- Modal for form -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title modal-heading text-center w-100" id="exampleModalLabel" style="font-weight: bold;"><i class="fas fa-solid fa-user-plus" style="margin-right: 12px;"></i>Sign Up</h4>
+        <button type="button" class="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <form action="" id="SignUp" class="w-100">
+                <div class="form-item">
+                  <i class="bi bi-person-fill"></i>
+                  <input type="text" placeholder="Username" id="signInput1">
+                </div>
+                <div class="form-item">
+                  <i class="fas fa-solid fa-envelope"></i>
+                  <input type="text" placeholder="Your email" id="signInput2">
+                </div>  
+                <div class="form-item">
+                  <i class="fas fa-solid fa-lock"></i>
+                  <input type="text" placeholder="Your password" id="signInput3">
+                </div>
+              </form>
+            </div>
+            <div class="carousel-item">
+              <form action="" id="LogIn" class="w-100">
+                <div class="form-item">
+                  <i class="bi bi-person-fill"></i>
+                  <input type="text" placeholder="Username" id="loginInput1">
+                </div>
+                <div class="form-item">
+                  <i class="fas fa-solid fa-lock"></i>
+                  <input type="text" placeholder="Your password" id="loginInput2">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-modal" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next" id="form-slider">Log In</button>
+        <button type="button" class="btn-modal" id="submitModal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Home section -->
+  <div class="home-section">
+    <div class="home-intro">
+      <h1>Best clothes for men</h1> <br>
+      <p>We are selling men clothes,shoes and watches etc.We are also providing best deals with 1week return policy.
+        We are giving best services to our customer so that they will be happy.You can check our variety by clicking the
+        button below.
+      </p>
+      <br><a href="#variety"><button type="button">Check our variety</button></a>
+    </div>
+    <img src="Images/man.png" alt="" draggable="false" id="main-img">
+  </div>
+
+  <!-- Variety section -->
+  <div class="variety" id="variety">
+  </div>
+    <h1 class="sec-heading" style="margin-bottom: 2.5rem;"><i class="bi bi-bag-fill"></i>Few Products</h1>
+    <div class="items" id="items">
+      
+      <!-- Code is coming from JS File -->
+    </div>
+
+    <div class="btn-group" role="group" aria-label="..." style="margin-bottom: 3rem;">
+      <a href="products.html" target="_blank">More Products</a>
+    </div>
+  </div> 
+
+  <div class="about-us" id="about-us"> <br>
+    <h1 class="sec-heading"><i class="bi bi-file-earmark-person"></i>Abouts <span class="badge" style="background-color: rgb(45, 27, 110)">Us</span></h1>
+    <div class="box">
+       <img src="Images/company.png" alt="" style="height: 200px;" style="border-radius: 90px;">
+       <div class="box-box">
+        <h2>About Company</h2> 
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et ab quaerat asperiores necessitatibus, illum laborum repellendus sit, ipsum repellat, cum obcaecati error. Nisi, esse harum. Cumque ut animi tenetur minima dolor minus nam nemo expedita saepe et? Eius doloribus inventore natus vel. Maxime quod officiis dolore recusandae nulla quas aspernatur iure dolorem. Minima magnam unde id?</p>
+       </div>
+    </div>
+    <div class="box">
+       <img src="Images/taha.png" alt="" style="height: 230px; border-radius: 5%;">
+       <div class="box-box">
+        <h2>About Owner</h2> 
+        <p>My name is Taha Tariq.My passion is programming and coding. I am Front End Web Dev. My age is 15. Married != true | Means single</p>
+       </div>
+    </div> <br> <br>
+  </div>
+   
+  <div class="preview" id="preview">
+    <h1 class="sec-heading"> <i class="bi bi-people-fill"></i> Testimonials</h1>
+    <div class="flex3">
+      <div class="say animate-say ani1">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, pariatur corporis reiciendis laborum delectus excepturi eveniet quam minima similique. Facilis corrupti praesentium consectetur nesciunt veritatis, adipisci labore aspernatur inventore voluptatem.</p>
+        <div class="preview-stars">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+        </div>
+        <img src="Images/person.png" alt=""> 
+        <h3>Muhammad Owais</h3>
+      </div>
+      <div class="say" id="animate-say">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, pariatur corporis reiciendis laborum delectus excepturi eveniet quam minima similique. Facilis corrupti praesentium consectetur nesciunt veritatis, adipisci labore aspernatur inventore voluptatem.</p>
+        <div class="preview-stars">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+        </div>
+        <img src="Images/person.png" alt=""> 
+        <h3>Taha Tariq</h3>
+      </div>
+      <div class="say animate-say ani2">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, pariatur corporis reiciendis laborum delectus excepturi eveniet quam minima similique. Facilis corrupti praesentium consectetur nesciunt veritatis, adipisci labore aspernatur inventore voluptatem.</p>
+        <div class="preview-stars">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+        </div>
+        <img src="Images/person.png" alt=""> 
+        <h3>Abdul Rafay</h3>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- Footer section -->
+  <div class="footer">
+    <div class="copy-right">
+        <h2 class="copy-right"> Copyright <i class="fas fa-solid fa-copyright"></i> 2021-2022 Shopliq.com </h2> <hr>   
+    </div> <br>
+    <div class="link-list" id="footer-list">
+        
+        <!-- Code is coming form javaScript -->
+    </div> <br> <br>
+    <div class="follow-us">      
+      <h3>Follow us on more platforms</h3>
+      <div class="follow-us-icons">
+        <a href="https://www.facebook.com/profile.php?id=100073800926103" target="_blank" title="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/tahatariq_7/" target="_blank" title="Instagram"><i class="bi bi-instagram"></i></a>
+        <i class="bi bi-youtube" title="Youtube"></i>
+        <a href="https://github.com/TahaTariq73" target="_blank" title="Github"><i class="bi bi-github"></i></a>
+      </div>
+    </div>
+    <br>
+  </div> 
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+</body>
+<script src="JavaScript/logic.js" type="module"></script>
+</html>
