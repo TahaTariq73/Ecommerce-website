@@ -26,7 +26,8 @@
 .say{
     position: relative;
 /*     background-image: url('/Images/purple.png'); */
-    background-color: indigo;
+/*     background-color: indigo; */
+    background-image: linear-gradient(to right, #07aaa2, #44a4b1);
     color: white;
     display: flex;
     flex-direction: column;
@@ -48,7 +49,7 @@
     left: 100%;
     display: none;
 }
-.say:hover{  box-shadow: 0px 0px 12px rgb(110, 27, 189); }
+.say:hover{  box-shadow: 0px 0px 12px #44a4b1; }
 
 .say img{ 
     width: 70px;
@@ -59,7 +60,9 @@
 
 /* This code is for footer */
 .footer{
-    background-color: rgb(31, 31, 31);
+/*     background-color: rgb(31, 31, 31); */
+    background-image: url('../Images/footer-img.png');
+    background-size: cover;
     color: white;
 }
 .copy-right{ padding: 0.5rem 2rem; }
