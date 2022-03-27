@@ -49,7 +49,7 @@
 .location-section{
     padding: 0px 6rem;
 /*     background-color: rgb(31, 31, 31); */
-    background-image: url('../Images/footer-img.png');
+    background-image: url('Images/footer-img.png');
     color: rgba(255, 255, 255, 0.781);
 }
 .loc-con{
